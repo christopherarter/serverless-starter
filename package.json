@@ -1,0 +1,31 @@
+{
+  "name": "chris-arter-node-es6-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Christopher Arter",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "serverless-http": "^1.8.0",
+    "babel-runtime": "^6.26.0",
+    "source-map-support": "^0.4.18"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.32.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "jest": "^21.2.1",
+    "serverless-webpack": "^5.1.0",
+    "webpack": "^4.16.2",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

@@ -1,0 +1,24 @@
+# serverless.yml
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+service: chris-arter-node-es6-starter
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+    
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
