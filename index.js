@@ -1,7 +1,3 @@
-// index.js
-
-// const serverless = require('serverless-http');
-// const express = require('express');
 import serverless from 'serverless-http';
 import express from 'express';
 const app = express();
