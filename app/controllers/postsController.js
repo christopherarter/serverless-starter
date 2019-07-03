@@ -1,5 +1,5 @@
 import express from 'express';
-
+import { Post } from '../models/index';
 const postsRouter = express.Router();
 
 /**
