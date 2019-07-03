@@ -2,6 +2,7 @@
 plugins:
   - serverless-webpack
   - serverless-offline
+  - serverless-dotenv-plugin
 
 service: chris-arter-node-es6-starter
 

@@ -1,19 +1,17 @@
 import authMiddleware from "./middleware/authMiddleware";
 import express from "express";
-import * as controllers from "./controllers/index";
+import { postsController, authController } from "./controllers/index";
 
 let router = express.Router();
-/**
- * Global middleware
- */
-// router.all("/posts/", authMiddleware);
-
 
 /**
  * Register controllers.
  */
-router.get('/', (req, res) => {
-    res.send('helloooo world');
+router.get("/", (req, res) => {
+	res.send("Hello World!");
 });
-router.get("/posts", authMiddleware, controllers.postsController.index);
+
+router.use("/auth", authController);
+router.use("/posts", postsController);
+
 export default router;
